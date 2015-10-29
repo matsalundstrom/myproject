@@ -1,0 +1,24 @@
+{
+  "name": "myproject",
+  "version": "0.0.1",
+  "description": "A test project.",
+  "keywords": [],
+  "homepage": "https://github.com/matsalundstrom/myproject",
+  "bugs": {
+    "url": "https://github.com/matsalundstrom/myproject/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Mats Lundström",
+    "email": "mats.a.lundstrom@gmail.com",
+    "url": "https://github.com/matsalundstrom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matsalundstrom/myproject.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true
+}
