@@ -34,6 +34,16 @@ gulp.task('eslint', function () {
     .pipe($.eslint.failOnError());
 });
 
+gulp.task('sass', function () {
+  'use strict';
+
+  return gulp
+    .src(config.scss)
+    .pipe($.sass().on('error', $.sass.logError))
+    .pipe($.autoprefixer({ browsers: ['last 2 version', '> 5%'] }))
+    .pipe(gulp.dest('src/styles/'));
+});
+
 gulp.task('default', function () {
   'use strict';
   // place code for your default task here

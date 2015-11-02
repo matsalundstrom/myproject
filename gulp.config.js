@@ -6,7 +6,8 @@ module.exports = function () {
     js: [
       './src/**/*js',
       './*.js'
-		]
+		],
+    scss: 'src/styles/styles.scss'
   };
 
   return config;

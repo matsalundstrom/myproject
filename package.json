@@ -20,7 +20,9 @@
   "scripts": {
     "test:jshint": "jshint --reporter=node_modules/jshint-stylish src/app/app.js",
     "test:jscs": "jscs src/app/app.js",
-    "test:eslint": "eslint *.js src/**/*.js"
+    "test:eslint": "eslint *.js src/**/*.js",
+    "build:less": "lessc src/styles/styles.less src/styles/styles.css",
+    "build:stylus": "stylus < src/styles/styles.styl > src/styles/styles.css"
   },
   "private": true,
   "devDependencies": {
@@ -30,13 +32,19 @@
     "grunt-eslint": "^17.3.1",
     "grunt-jscs": "^2.3.0",
     "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
     "gulp-eslint": "^1.0.0",
     "gulp-jscs": "^3.0.2",
     "gulp-jshint": "^1.12.0",
+    "gulp-less": "^3.0.3",
     "gulp-load-plugins": "^1.0.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-stylus": "^2.1.0",
     "jscs": "^2.5.0",
     "jshint": "^2.8.0",
     "jshint-stylish": "^2.0.1",
-    "load-grunt-tasks": "^3.3.0"
+    "less": "^2.5.3",
+    "load-grunt-tasks": "^3.3.0",
+    "stylus": "^0.52.4"
   }
 }
